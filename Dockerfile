@@ -15,4 +15,4 @@ FROM arm64v8/debian:stable-20201209
 RUN mkdir -p /usr/lib/dart
 COPY --from=builder /dart/dart-sdk/ /usr/lib/dart/
 ENV DART_SDK /usr/lib/dart
-eNV PATH $DART_SDK/bin:$PATH
+ENV PATH $DART_SDK/bin:$PATH
